@@ -1,5 +1,5 @@
 from PIL import Image, ImageOps
-#
+
 # ImageOps.equalize(Image.open("/home/zhangcheng/Desktop/python/img/P2.jpg")).save("e.jpg")
 
 # ImageOps.autocontrast(Image.open("/home/zhangcheng/Desktop/python/img/P1.jpg")).save("e_1.jpg")
