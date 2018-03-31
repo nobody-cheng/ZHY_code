@@ -8,7 +8,7 @@ detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor('./shape_predictor_68_face_landmarks.dat')
 
 save_path = '/home/python/Desktop/python/image/out_img/'
-video_path = 'D:\\zhanghongyuan\\code\\video\\'
+video_path = '/home/python/Desktop/python/image/video/'
 video_img = '/home/python/Desktop/python/image/video_img/'
 face_img = '/home/python/Desktop/python/image/face_img/'
 # suffix = ['jpg', 'png']
