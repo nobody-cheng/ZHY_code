@@ -20,7 +20,6 @@ if not os.path.exists(save_path):
 def read_video(video_path):
     print('read video')
     for root, dirs, video_files in os.walk(video_path):
-        p = 1
         for video in video_files:
             # read video
             videoPath = video_path + video
@@ -39,9 +38,8 @@ def read_video(video_path):
                 rval, frame = vc.read()
                 if c % timeFps == 0:
                     cv2.imwrite(video_img + '{}'.format(c) + '.png', frame)
+                print('Save Picture {}'.format(c))
                 c = c + 1
-            print('Save Picture {}'.format(p))
-            p += 1
             vc.release()
 
 
@@ -111,7 +109,7 @@ def save_img(size, image, i):
 
 
 if __name__ == '__main__':
-    read_video(video_path)
+    # read_video(video_path)
     read_face_img(video_img)
     resizeImage(face_img)
     print('***************end********************')
